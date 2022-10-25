@@ -1,17 +1,3 @@
-/* Panier */
-
-.div__produit--panier {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.image {
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 15px;
-}
-
 @font-face {
     font-family: Fredoka One;
     src: url(/fonts/Fredoka_One/FredokaOne-Regular.ttf);
@@ -20,6 +6,21 @@
 @font-face {
     font-family: Ubuntu;
     src: url(/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+/* Panier */
+
+.div__produit--panier {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.image {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
 }
 
 .titre_produit_panier {
@@ -48,15 +49,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 50px;
 }
 
 .hr__ligne--pleine {
-    width: 691.16px;
-    height: 1.93px;
-    left: 768.15px;
-    top: 405.73px;
-    border: 1px solid #DD6E42;
+    height: 1px;
+    width: 600px;
+    background:#DD6E42;
     border-radius: 15px;
+    margin: 20px 0;
 }
 
 .hr__ligne--dash{

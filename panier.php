@@ -14,8 +14,8 @@
             <div class="div__produit--description">
                 <p class="titre_produit_panier">T-shirt "Mort-bihan"</p>
                 <p class="font--text">Vêtements - Taille L</p>
-                <p class="font--text">75€</p>
             </div>
+            <p class="font--text">75€</p>
         </div>
         <hr class="hr__ligne--pleine" color="#DD6E42">
         <div class="div__produit--panier">
@@ -23,8 +23,8 @@
             <div class="div__produit--description">
                 <p class="titre_produit_panier">T-shirt "Regard Breizh"</p>
                 <p class="font--text">Vêtements - Taille L</p>
-                <p class="font--text">75€</p>
             </div>
+            <p class="font--text">75€</p>
         </div>
         <hr class="hr__ligne--pleine" color="#DD6E42">
         <div class="div__produit--panier">
@@ -32,8 +32,8 @@
             <div class="div__produit--description">
                 <p class="titre_produit_panier">Sac à main "Vie en ROZ</p>
                 <p class="font--text">Catégorie - Taille Unique</p>
-                <p class="font--text">75€</p>
             </div>
+            <p class="font--text">75€</p>
         </div>
     </div>
     <div class="div__detail__commande">
