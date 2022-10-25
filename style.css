@@ -1,0 +1,91 @@
+/* Panier */
+
+.produit_panier {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+}
+
+@font-face {
+    font-family: Fredoka One;
+    src: url(/fonts/Fredoka_One/FredokaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+.titre_produit_panier {
+    font-family: Fredoka One;
+    color: #4f6d7a;
+}
+
+.font--text {
+    font-family: Ubuntu;
+    color: #4f6d7a;
+}
+
+.descp_produit_panier {
+   display: flexbox;
+   flex-direction: column;
+   position: absolute;
+   padding: 200px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ligne_sep {
+    width: 691.16px;
+    height: 1.93px;
+    left: 768.15px;
+    top: 405.73px;
+    border: 1px solid #DD6E42;
+    border-radius: 15px;
+}
+
+.dash_ligne{
+    border-top: dashed 1px #DD6E42;
+
+}
+
+.rect_detail_commande {
+    display: absolute;
+    width: 350px;
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.btn--commander {
+    background: #DD6E42;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+}
+
+.btn--text {
+    font-family: Ubuntu;
+    color: white;
+    font-size: 1.5em;
+}
+
+.text--detail {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
