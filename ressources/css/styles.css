@@ -167,6 +167,7 @@ nav{
 
 main{
     min-height: 10cm;
+    margin-bottom: 1cm;
 }
 
 /* Footer */
@@ -242,4 +243,22 @@ footer{
     font-family: 'source-sans-pro';
     font-size: 0.3cm;
     text-align: center;
+}
+
+
+/* Caroussel */
+
+.caroussel{
+    
+    height: 9cm;
+}
+
+.caroussel .element-caroussel{
+    display: inline-block;
+    height: 9cm;
+    width: 100%;
+}
+
+.element-caroussel{
+    background-size: 100%;
 }
