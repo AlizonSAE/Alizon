@@ -1,22 +1,22 @@
 <nav id="menu">
     <div id="section-menu-1">
-        <img class="logo-alizon" src="<?php echo $_SESSION["pr"] ?>img/logo.png" alt="Logo d'Alizon"/>
+        <img class="logo-alizon" src="<?php echo $_SESSION["pr"] ?>img/logos/logo.png" alt="Logo d'Alizon"/>
         <div id="icones-utilisateur">
             <a href="profil.html">
-                <img class="icones-svg" src="<?php echo $_SESSION["pr"] ?>img/account-pin-circle-line.svg" alt="Votre profil"/>
+                <img class="icones-svg" src="<?php echo $_SESSION["pr"] ?>img/logos/account-pin-circle-line.svg" alt="Votre profil"/>
             </a>
             <a href="panier.html">
-                <img class="icones-svg" src="<?php echo $_SESSION["pr"] ?>img/shopping-bag-fill.svg"  alt="Votre panier"/>
+                <img class="icones-svg" src="<?php echo $_SESSION["pr"] ?>img/logos/shopping-bag-fill.svg"  alt="Votre panier"/>
             </a>
         </div>
     </div>
     <div id="section-menu-2">
         <div id="bouton-categories" class="modifications-mutuelles">
-            <img id="icone-menu" src="<?php echo $_SESSION["pr"] ?>img/menu-line.svg"/>
+            <img id="icone-menu" src="<?php echo $_SESSION["pr"] ?>img/logos/menu-line.svg"/>
             <h4>Catégories</h4>
         </div>
         <div id="barre-recherche">
-            <img id="icone-loupe" src="<?php echo $_SESSION["pr"] ?>img/search-2-line.svg"/>
+            <img id="icone-loupe" src="<?php echo $_SESSION["pr"] ?>img/logos/search-2-line.svg"/>
             <input type="text"/>
         </div>
     </div>

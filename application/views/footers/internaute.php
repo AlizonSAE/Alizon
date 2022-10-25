@@ -20,7 +20,7 @@
             </ul>
         </div>
         <div id="logos-footer">
-            <img class="logo-alizon" src="<?php echo $_SESSION["pr"] ?>img/logo.png" alt="Logo d'alizon"/>
+            <img class="logo-alizon" src="<?php echo $_SESSION["pr"] ?>img/logos/logo.png" alt="Logo d'alizon"/>
         </div>
         <div id="mentions-legales">
             <p>@ copyright 2022 | Mentions légales | CGU-CGV</p>
