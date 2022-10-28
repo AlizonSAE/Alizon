@@ -1,0 +1,176 @@
+@font-face {
+    font-family: Fredoka One;
+    src: url(/fonts/Fredoka_One/FredokaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+/* Panier */
+body {
+    margin:0;
+}
+.div__produit--panier {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.image {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+}
+
+.titre_produit_panier {
+    font-family: Fredoka One;
+    color: #4f6d7a;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.font--text {
+    font-family: Ubuntu;
+    color: #4f6d7a;
+}
+
+.div__produit--description {
+   display: flexbox;
+   flex-direction: column;
+   position: absolute;
+   margin: 200px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hr__ligne--pleine {
+    height: 1px;
+    width: 600px;
+    background:#DD6E42;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.hr__ligne--dash{
+    border-top: dashed 1px #DD6E42;
+
+}
+
+.div__detail__commande {
+    display: absolute;
+    width: 350px;
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.btn__bouton {
+
+    background: #DD6E42;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 250px;
+    height: 50px;
+}
+
+.btn__text {
+    font-family: Ubuntu;
+    color: white;
+    font-size: 1.5em;
+}
+
+.div__detail--bouton {
+    display: flex;
+    justify-content: center;
+}
+
+.text__detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.p__produit--prix {
+    font-size: 35px;
+    color: #4f6d7a;
+}
+
+.div__produit--suppr {
+    text-align: right;
+}
+
+.p__detail {
+    text-align: right;
+}
+
+.one {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.four {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.five {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.six {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.seven {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.eight {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.nine {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.input__bouton--quantite {
+    border: 1px solid #B9B9B9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
