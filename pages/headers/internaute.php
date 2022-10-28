@@ -20,7 +20,7 @@
                 </div>
                 <div id="barre-recherche">
                     <img id="icone-loupe" src="<?php echo $_SESSION["pr"] ?>img/logos/search-2-line.svg"/>
-                    <input type="text"/>
+                    <input type="text" placeholder="Votre recherche" />
                 </div>
             </div>
             <div id="section-menu-3" class="shadow bottom modifications-mutuelles">
