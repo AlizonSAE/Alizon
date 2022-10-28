@@ -29,6 +29,13 @@
     font-style: normal;
 }
 
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
 /* Nav */
 
 nav{
@@ -167,7 +174,6 @@ nav{
 
 main{
     min-height: 10cm;
-    margin-bottom: 1cm;
 }
 
 /* Footer */
@@ -245,20 +251,302 @@ footer{
     text-align: center;
 }
 
+/* DASHBOARD VENDEUR - ACCUEIL */
 
-/* Caroussel */
+.vendeurmenu__container1 {
 
-.caroussel{
-    
-    height: 9cm;
+    height: 100%;
+    background-color: red;
+
 }
 
-.caroussel .element-caroussel{
-    display: inline-block;
-    height: 9cm;
-    width: 100%;
+.dashboardvendeur__accueil {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Ubuntu';
+
 }
 
-.element-caroussel{
-    background-size: 100%;
+.vendeurresume__titremenu {
+
+    font-family: 'Ubuntu';
+    margin: 20px;
+
+}
+
+.vendeurmenu {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    border-right: 0.1px solid #D6D5D5;
+    height: 100%;
+
+
+}
+
+.vendeurmenu__line > a:link, .vendeurmenu__line > a:visited {
+
+    color: #FBFBFB;
+    text-decoration: none;
+
+}
+
+.vendeurmenu__line:hover {
+
+    background-color: #DD6E42;
+    color: white;
+
+}
+
+.vendeurmenu__line > a:hover {
+
+    color: white;
+
+}
+
+   
+.vendeurmenu__line {
+   
+    padding: 20px 0;
+    background-color: #FBFBFB;/**/
+    color: #575757;
+    padding-left: 10px;
+    text-align: left;
+    width: 336px;
+    border: 0.1px solid #D6D5D5;
+
+   
+}
+
+.vendeurmenu__selected {
+
+    background-color: #DD6E42;
+    color: white;
+
+}
+
+
+.dashboardvendeur__ajout {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+   }
+   
+
+
+
+.dashboardvendeur__body,.container1, .container2{
+    display: flex;
+    color: #4F6D7A;
+}
+
+.container2 {
+
+    margin: 20px;
+
+}
+
+
+.dashboardvendeur__produit {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+   
+
+
+
+.dashboardvendeur__produit, .container1{
+    display: flex;
+    color: #4F6D7A;
+}
+
+.vendeurresume__button {
+
+    height: 60px;
+    width: 370px;
+    background-color: #DD6E42;
+    color: white;
+    border-radius: 28px;
+    font-size: 25px;
+    text-align: center;
+    padding: 7px 20px;
+
+}
+
+.vendeurresume__button:link {
+
+    text-decoration: none;
+
+}
+
+.vendeurresume__button:hover {
+
+    background-color: #AFAEAE;
+    color: #DD6E42;
+
+}
+
+/* DASHBOARD VENDEUR - PAGE GESTION DES PRODUITS*/
+
+.dashboardvendeur__produit {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.vendeurresume__listeproduit {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px;
+
+}
+
+.vendeurresume__produit {
+
+    width: 200px;
+    margin: 15px;
+
+}
+
+.vendeurresume__produit__image {
+
+    height: 200px;
+    border-radius: 20px;
+
+}
+
+.vendeurresume__produit__nom {
+
+    text-align: center;
+    color: #353434;
+
+}
+
+.vendeurresume__produit__prix {
+
+    text-align: center;
+    color: black;
+
+}
+
+.vendeurresume__produit__fav-button {
+
+    position: relative;
+    left: 175px; top: 30px;
+    height: 34px;
+    width: 34px;
+
+}
+
+.vendeurresume__produit__edit-button {
+
+    height: 24px;
+    width: 24px;
+
+}
+
+.vendeurresume__produit__hide-button {
+
+    position: relative;
+    left: 155px;
+    height: 24px;
+    width: 24px;
+
+}
+
+/* DASHBOARD VENDEUR - PAGE GESTION DES COMMANDES */
+
+.tableaucommande {
+
+    border: 1px solid #AFAEAE;
+    border-collapse: collapse;
+    background-color: #F8F7F7;
+    text-align: left;
+    margin-left: 100px;
+
+}
+
+.tableaucommande__head {
+
+    border: 1px solid #AFAEAE;
+
+}
+
+.tableaucommande__head > tr > th {
+
+    border: 1px solid #AFAEAE;
+    padding: 5px;
+    color: #646262;
+
+}
+
+.tableaucommande__commande > td {
+
+    border-right: 1px solid #AFAEAE;
+    padding: 5px;
+
+}
+
+/* DASHBOARD VENDEUR - PAGE GESTION DES PROMOTIONS */
+
+.vendeurresume__listepromo {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.vendeurresume__promo {
+
+    width: 200px;
+    margin: 15px;
+    position: static;
+
+}
+
+.vendeurresume__promo__image {
+
+    height: 200px;
+    border-radius: 20px;
+
+}
+
+.vendeurresume__promo__nom {
+
+    text-align: center;
+    color: #353434;
+
+}
+
+.vendeurresume__promo__prctge {
+
+    position: relative;
+    left: 150px; bottom: 30px;
+    text-align: center;
+    height: 35px;
+    width: 50px;
+    background-color: #DD6E42;
+    color: white;
+    padding: 1px;
+
 }

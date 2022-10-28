@@ -8,19 +8,22 @@
 
 ?>
 
-<main class="dashboardvendeur__accueil">
+<div class="dashboardvendeur__body">
+		<div class="container1">
+			<div class="dashboardvendeur__ajout">
+				<ul class="vendeurmenu">
+					<li class="vendeurmenu__line"><img></img>Accueil</li>
+					<li class="vendeurmenu__line vendeurmenu__selected"><a href="dashboard_vendeur_produit.php">Gestion des produits</a></li>
+					<li class="vendeurmenu__line">Gestion des commandes</li>
+					<li class="vendeurmenu__line">Gestion des promotions</li>
+					<li class="vendeurmenu__line">Gestion des categories de produits</li>
+				</ul>
+			</div>
+		</div>
+	
+	<div class="container2">
 
-	<ul class="vendeurmenu">
-
-		<li class="vendeurmenu__line  vendeurmenu__selected"><a><img></img>Accueil</a></li>
-		<li class="vendeurmenu__line"><a href="dashboard_vendeur_produit.php">Gestion des produits</a></li>
-		<li class="vendeurmenu__line"><a href="">Gestion des commandes</a></li>
-		<li class="vendeurmenu__line"><a href="">Gestion des promotions</a></li>
-		<li class="vendeurmenu__line"><a href="">Gestion des categories de produits</a></li>
-
-	</ul>
-
-	<section class="vendeurresume">
+		<section class="vendeurresume">
 
 		<h2 class="vendeurresume__titremenu">Bienvenue sur votre tableau de bord !</h2>
 
@@ -172,8 +175,9 @@
 		</section>
 
 	</section>
-
-</main>
+		
+	</div>       
+</div>
 
 <?php 
 
