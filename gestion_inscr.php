@@ -35,6 +35,11 @@
         $sql = "INSERT INTO alizon._client (email, passwd, nom, prenom, date_naissance) VALUES ('$email', '$mdp', '$nom', '$prenom', '$date_naiss')";
         $stmt= $dbh->prepare($sql);
         $stmt->execute();
+        
+        // sauvegarde de l'email de session
+        $_SESSION['email'] = $_POST['email'];
+        header('Location: index.php');
+
     }
 
 ?>
