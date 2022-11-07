@@ -16,9 +16,10 @@
     if (!password_verify($_POST['mot_de_passe'], $user['passwd'])){
         header('Location: connexion.php?mdpinc=\'Mot de passe incorrect ou utilisateur inconnu, veuillez réessayer\'');
     } else {
+        $_SESSION['email'] = $_POST['email'];
         header('Location: index.php');
     }
 
-
+    
 
 ?>
