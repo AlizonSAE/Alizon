@@ -8,7 +8,8 @@
     $email = $_POST['email'];
 
     
-    $stmt = $dbh->query("SELECT passwd FROM alizon._client WHERE email = '$email'");
+    $stmt = $dbh->prepare("SELECT * FROM alizon._client WHERE email = :email");
+    $stmt.bindValue(":email",$email,PDO::PARAM_STR);
     $stmt->execute();
     $user = $stmt->fetch();
 
@@ -16,7 +17,8 @@
     if (!password_verify($_POST['mot_de_passe'], $user['passwd'])){
         header('Location: connexion.php?mdpinc=\'Mot de passe incorrect ou utilisateur inconnu, veuillez réessayer\'');
     } else {
-        $_SESSION['email'] = $_POST['email'];
+        $_SESSION['id'] = $user['id_client'];
+        $_SESSION['email'] = $email;
         header('Location: index.php');
     }
 
