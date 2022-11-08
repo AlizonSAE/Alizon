@@ -37,5 +37,5 @@ $user   = 'alagane';
 
 
 
-$pass	= '#Citrouille974';
+$pass	= '';
 ?>
