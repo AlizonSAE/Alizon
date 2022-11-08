@@ -32,12 +32,23 @@
         $prenom = $_POST['prenom'];
 
         // base de données
-        $sql = "INSERT INTO alizon._client (email, passwd, nom, prenom, date_naissance) VALUES ('$email', '$mdp', '$nom', '$prenom', '$date_naiss')";
+        $sql = "INSERT INTO alizon._client (email, passwd, nom, prenom, date_naissance) VALUES (:email, :mdp, :nom, :prenom, :date_naiss)";
         $stmt= $dbh->prepare($sql);
+        $stmt->bindValue(":email",$email,PDO::PARAM_STR);
+        $stmt->bindValue(":mdp",$mdp,PDO::PARAM_STR);
+        $stmt->bindValue(":nom",$nom,PDO::PARAM_STR);
+        $stmt->bindValue(":prenom",$prenom,PDO::PARAM_STR);
+        $stmt->bindValue(":date_naiss",$email,PDO::PARAM_STR);
         $stmt->execute();
         
         // sauvegarde de l'email de session
         $_SESSION['email'] = $_POST['email'];
+        $sql="select id_client from alizon._client where email=:email";
+        $requete = $dbh -> prepare($sql);
+        $requete->bindValue(":email",$email,PDO::PARAM_STR);
+        $requete->execute();
+        $row= $requete ->fetch();
+        $_SESSION['id'] = $row['id_client'];
         header('Location: index.php');
 
     }
